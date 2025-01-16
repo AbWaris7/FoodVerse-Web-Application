@@ -118,7 +118,15 @@
   gap: 9.6rem;
   grid-template-columns: repeat(2, 1fr);
 }
-
+.step-description {
+  font-size: 1.8rem;
+  line-height: 3.2;
+}
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .step-img {
-  width: 50%;
+  width: 35%;
 }
