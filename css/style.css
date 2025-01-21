@@ -442,8 +442,10 @@
 .cta-text-box {
 }
 .cta-imgage-box {
-  background-image: linear-gradient(to right bottom, #eb984e, #e67e22),
+  background-image: linear-gradient(to right bottom, #eb974e7a, #e67d2269),
     url("../img/eating.jpg");
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  border-radius: 11px;
 }
