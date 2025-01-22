@@ -60,6 +60,7 @@ body {
   margin-bottom: 4.8rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   text-decoration: none;
@@ -70,6 +71,15 @@ body {
   font-weight: 600;
   /* transition on original state */
   transition: all 0.4s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
 }
 .btn--full:link,
 .btn--full:visited {
