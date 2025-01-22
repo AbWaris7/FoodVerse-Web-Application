@@ -484,14 +484,18 @@
   margin-bottom: 1.2rem;
 }
 
-.cta-form button {
-}
-.cta-form select {
-}
 .cta-form::placeholder {
   color: #aaa;
 }
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem #e67e22;
+}
+
+/********************/
+/* FOOTER SECTION */
+/*********************/
+
+.footer {
+  height: 9.6rem 0;
 }
