@@ -9,3 +9,27 @@ const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
+
+const allLinks = document.querySelector("a:link");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    console.log(href);
+
+    // Scroll back to Top
+    if (href == "#")
+      window.screenTop({
+        top: 20,
+        behavior: "smooth",
+      });
+    if (href != "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Close mobile Navigation
+    if (link.classList.contain("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
+  });
+});
