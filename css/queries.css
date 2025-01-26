@@ -96,6 +96,7 @@ instead, 1rem = 1em = 16px */
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
+    z-index: 999;
   }
   .main-nav {
     background-color: blue;
