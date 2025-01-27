@@ -104,6 +104,13 @@
   gap: 9.6rem;
   align-items: center;
 }
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
 .hero-img {
   width: 100%;
 }
@@ -186,7 +193,7 @@
 }
 .step-description {
   font-size: 1.8rem;
-  line-height: 3.2;
+  line-height: 1.8;
 }
 .step-img-box {
   position: relative;
@@ -198,9 +205,7 @@
 .step-img-box::after {
   content: "";
   display: block;
-  width: 60%;
   border-radius: 50%;
-  padding-bottom: 60%;
   background-color: #fdf2e9;
   position: absolute;
   top: 50%;
@@ -216,7 +221,7 @@
 }
 .step-img-box::after {
   width: 45%;
-  padding-bottom: 50%;
+  padding-bottom: 45%;
   background-color: #fae5d3;
   z-index: -1;
 }
@@ -438,7 +443,6 @@
   font-size: 1.6rem;
   line-height: 1.6;
   text-align: center;
-  margin-bottom: 4rem;
 }
 .feature-icon {
   color: #e67e22;
@@ -465,7 +469,7 @@
 /* HOW TO ACTION */
 /*********************/
 .section-how-to-action {
-  padding: 9.6rem 0 12.8rem 0;
+  padding: 4.8rem 0 12.8rem;
 }
 .cta {
   display: grid;
@@ -474,6 +478,7 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
 }
 
 .cta-text-box {
@@ -483,6 +488,7 @@
 .cta .heading-secondary {
   color: #2e1907;
   margin-bottom: 3.2rem;
+  color: inherit;
 }
 .cta-text {
   font-size: 1.8rem;
@@ -494,8 +500,6 @@
     url("../img/eating.jpg");
   background-size: cover;
   background-position: center;
-  overflow: hidden;
-  border-radius: 11px;
 }
 .cta-form {
   display: grid;
@@ -536,6 +540,8 @@
 
 .footer {
   height: 12.8rem 0;
+
+  border-top: 1px solid #eee;
 }
 
 .grid-footer {
@@ -565,7 +571,7 @@
   font-size: 1.4rem;
   line-height: 1.6rem;
   color: #767676;
-  /* margin-top: auto; */
+  margin-top: auto;
 }
 
 .footer-heading {
