@@ -8,12 +8,13 @@ instead, 1rem = 1em = 16px */
   }
 
   .heading-primary {
-    font-size: 4.4rem !important;
+    font-size: 4.4rem;
   }
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /*  BELOW 1200px (Landscape Tablets) */
 @media (max-width: 75em) {
   html {
@@ -22,7 +23,9 @@ instead, 1rem = 1em = 16px */
 
   .grid {
     column-gap: 4.8rem;
+    row-gap: 6.4rem;
   }
+
   .heading-secondary {
     font-size: 3.6rem;
   }
@@ -37,9 +40,11 @@ instead, 1rem = 1em = 16px */
   .main-nav-list {
     gap: 3.2rem;
   }
+
   .hero {
     gap: 4.8rem;
   }
+
   .testimonials-container {
     padding: 9.6rem 3.2rem;
   }
@@ -75,7 +80,7 @@ instead, 1rem = 1em = 16px */
     font-size: 7.4rem;
   }
   .meal-content {
-    padding: 2.2rem 3.2rem 3.2rem 3.2rem;
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
   }
   .section-testimonials {
     grid-template-columns: 1fr;
@@ -110,8 +115,7 @@ instead, 1rem = 1em = 16px */
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s ease;
-    display: none;
+    transition: all 0.5s ease-in;
     /* Hide it visually */
     opacity: 0;
 
@@ -133,7 +137,8 @@ instead, 1rem = 1em = 16px */
     flex-direction: column;
     gap: 4.8rem;
   }
-  .main-nav-list:visited {
+  .main-nav-list:visited,
+  .main-nav-list:link {
     font-size: 3rem;
   }
 
@@ -206,7 +211,7 @@ instead, 1rem = 1em = 16px */
   }
 
   .hero-img {
-    word-wrap: 80%;
+    width: 80%;
   }
   .logos img {
     height: 1.2rem;
